@@ -1,0 +1,56 @@
+[data-hbx="poweredby_cta"] {
+  display: none;
+}
+
+/* Hide the "Professional Summary" row (icon + heading) in the bio block.
+   The row is the only div whose direct child is an h2 inside .resume-biography,
+   so the education and interests headings (h3) are unaffected. */
+.resume-biography div:has(> h2) {
+  display: none;
+}
+
+/* Enlarge the bio text */
+.resume-biography .bio-text,
+.resume-biography .bio-text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Emphasised words (written as **word** in the bio) */
+.resume-biography .bio-text strong {
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .resume-biography .grid {
+    align-items: center;
+  }
+}
+
+.resume-biography .md\:col-span-8 > div {
+  width: 100%;
+}
+
+.resume-biography .prose,
+.resume-biography .bio-text {
+  max-width: none !important;
+  width: 100%;
+}
+
+/* Zero the template's bottom margins on the right column's blocks */
+.resume-biography .md\:col-span-8 > div {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Gap between the bio text and the CV button */
+.resume-biography .md\:col-span-8 > div:has(.bio-text) {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .resume-biography .grid {
+    align-items: center;
+    column-gap: 3rem;
+  }
+}
