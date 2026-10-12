@@ -24,10 +24,22 @@
 @media (min-width: 768px) {
   .resume-biography .grid {
     align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    width: 8;
+    max-width: 50rem;
+    margin-inline: auto;
+  }
+
+  /* stops the 4/8 column spans creating extra columns */
+  .resume-biography .grid > div {
+    grid-column: 1 / -1;      
   }
 }
 
 .resume-biography .md\:col-span-8 > div {
+  align-items: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -60,7 +72,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* change color of CV download button and socials buttons */
+/* center change color of CV download button and socials buttons*/
+.resume-biography .md\:col-span-8 > div:has(a[href$=".pdf"]) {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .resume-biography a[href$=".pdf"] {
   background-image: none;
   background-color: #1E1E1E;
@@ -72,10 +90,6 @@ html {
 }
 
 .resume-biography a[aria-label] { background-color: #1E1E1E; color: #fff; }
-
-/* remove circle border around profile photo */
-
-.resume-biography img.avatar { border: none; box-shadow: none; border-radius: 0; }
 
 /* move icons up a bit */
 .resume-biography .md\:col-span-4 > div:last-child {

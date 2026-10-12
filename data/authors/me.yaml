@@ -10,11 +10,11 @@ name:
   pronouns: 
 status:
 role: 
-bio: |
-  I'm a **Sydney-based game developer** completing a 
-  **Bachelor of Computer Science at the University of New South Wales**. 
-  I design, create, and fine-tune the fundamental systems and mechanics 
-  that help make good games great.
+bio: >-
+  I'm a **Sydney-based full-stack developer** completing a 
+  **Bachelor of Computer Science at the University of New South Wales**,
+  graduating in 2028. I design, build, and ship complete systems, from 
+  databases and APIs to responsive front-end customer experiences.
 
 # affiliations:
 
@@ -26,19 +26,19 @@ links:
     url: https://github.com/charleskmorgandev/
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/charles-morgan-17bb5a442/
-  - icon: custom/itchio
-    url: https://charleskmorgandev.itch.io/
-  # TBD: itch.io, leetcode
+#  - icon: custom/itchio
+#    url: https://charleskmorgandev.itch.io/
+# TBD: leetcode
 
 # experience:
 
-skills:
-  - name: Example Skill
-    items:
-      - label: Example subskill 1
-        level: 5
-      - label: Example subskill 2
-        level: 4
+# skills:
+#   - name: Example Skill
+#     items:
+#       - label: Example subskill 1
+#         level: 5
+#       - label: Example subskill 2
+#         level: 4
 
 # languages:
 #   - name: English

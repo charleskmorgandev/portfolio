@@ -7,14 +7,14 @@ main:
   - name: Bio
     url: /#bio
     weight: 10
-  - name: Education
-    url: /#education
-    weight: 11
-  - name: Skills
-    url: /#skills
-    weight: 12
   - name: Projects
     url: /#projects
+    weight: 11
+  - name: Tech Stack & Skills
+    url: /#skills
+    weight: 12
+  - name: Education
+    url: /#education
     weight: 13
   - name: Contact
     url: /#contact
