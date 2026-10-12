@@ -53,4 +53,9 @@
     align-items: center;
     column-gap: 3rem;
   }
+} 
+
+/* Smooth scrolling for the header anchor links (only if the user hasn't reduced motion) */
+html {
+  scroll-behavior: smooth;
 }
