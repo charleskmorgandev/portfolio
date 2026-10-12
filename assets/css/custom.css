@@ -59,3 +59,162 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* change color of CV download button and socials buttons */
+.resume-biography a[href$=".pdf"] {
+  background-image: none;
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+.resume-biography a[href$=".pdf"]:hover {
+  background-color: #1E1E1E;
+}
+
+.resume-biography a[aria-label] { background-color: #1E1E1E; color: #fff; }
+
+/* remove circle border around profile photo */
+
+.resume-biography img.avatar { border: none; box-shadow: none; border-radius: 0; }
+
+/* move icons up a bit */
+.resume-biography .md\:col-span-4 > div:last-child {
+  position: relative;
+  top: -10px;
+}
+
+/* scroll indicator */
+
+.resume-biography::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  opacity: 0.7;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .resume-biography::after {
+    animation: scroll-cue 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes scroll-cue {
+  0%, 100% { transform: translateX(-50%) translateY(0) rotate(45deg); }
+  50%      { transform: translateX(-50%) translateY(0.5rem) rotate(45deg); }
+}
+
+/* Projects */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: 0 4rem;   /* gap between the images/text and the screen edges */
+}
+
+/* Break out of the centred container to full screen width */
+.projects-list {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-row {
+  display: flex;
+  align-items: flex-start;   /* title and text start at the top */
+  gap: 0;
+}
+
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Image flush to the screen edge, rounded corners */
+.project-img {
+  display: block;
+  flex: 0 0 40%;
+  overflow: hidden;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.project-row:nth-child(even) .project-img {
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+  transition: transform 0.4s ease;
+}
+
+/* Text takes all remaining width */
+.project-text {
+  flex: 1;
+  padding: 0 4rem;
+}
+
+/* Remove the prose top margin so the title aligns with the image top */
+.project-text > :first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .project-row,
+  .project-row:nth-child(even) {
+    flex-direction: column;
+  }
+  .project-img,
+  .project-row:nth-child(even) .project-img {
+    flex-basis: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  .project-text {
+    padding: 1rem;
+  }
+}
+
+/* Expand on hover (and on keyboard focus) */
+.project-img:hover img,
+.project-img:focus-visible img {
+  transform: scale(1.06);
+}
+
+.project-text {
+  flex: 1;
+}
+
+/* Stack on phones */
+@media (max-width: 767px) {
+  .project-row,
+  .project-row:nth-child(even) {
+    flex-direction: column;
+  }
+  .project-img {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-img img {
+    transition: none;
+  }
+}

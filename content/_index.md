@@ -24,7 +24,7 @@ sections:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
-          enable: true
+          enable: false
 
       # Name heading sizing to accommodate long or short names
       name:
@@ -32,7 +32,7 @@ sections:
 
       # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
 
   - block: markdown
@@ -55,17 +55,38 @@ sections:
     design:
       columns: '1'
 
-  - block: collection
+  - block: markdown
     id: projects
     content:
-      title: Projects
-      filters:
-        folders:
-          - projects
-        featured_only: false
+      title: 'Projects (click images for more info)'
+      subtitle: ''
+      text: |-
+        <div class="projects-list">
+        <div class="project-row">
+        <a class="project-img" href="https://charleskmorgandev.itch.io/"><img src="images/1.jpg" alt="Joro gameplay screenshot"></a>
+        <div class="project-text">
+        <h3>Joro</h3>
+        <p>Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project.</p>
+        </div>
+        </div>
+        <div class="project-row">
+        <a class="project-img" href="https://charleskmorgandev.itch.io/"><img src="images/2.jpg" alt="Game 2 screenshot"></a>
+        <div class="project-text">
+        <h3>Game 2</h3>
+        <p>Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project.</p>
+        </div>
+        </div>
+        <div class="project-row">
+        <a class="project-img" href="https://charleskmorgandev.itch.io/"><img src="images/3.jpg" alt="Game 2 screenshot"></a>
+        <div class="project-text">
+        <h3>Game 3</h3>
+        <p>Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project. Info of the project.</p>
+        </div>
+        </div>
+        </div>
     design:
-      view: article-grid
-      columns: 2
+      columns: '1'
+      
 
   - block: markdown
     id: contact

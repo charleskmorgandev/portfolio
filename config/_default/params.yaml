@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Charles Morgan"
+    name: ""
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -43,11 +43,11 @@ hugoblox:
     colors_light: {}
     colors_dark: {}
     # Optional: Semantic surface color overrides
-    surfaces:
-      background: ""
+    surfaces: 
+      background: "#121212"
       foreground: ""
       header:
-        background: ""
+        background: "#1E1E1E"
         foreground: ""
       footer:
         background: ""
@@ -89,7 +89,7 @@ hugoblox:
     search: false
     theme_toggle: false
     theme_picker: false
-    language_switcher: true
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -113,7 +113,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. "
+    notice: "© {year} Charles Morgan. "
     # license:
     #   type: cc # cc | custom
     #   allow_derivatives: false

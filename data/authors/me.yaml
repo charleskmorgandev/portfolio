@@ -11,7 +11,10 @@ name:
 status:
 role: 
 bio: |
-  I'm a **game developer** completing a **Bachelor of Computer Science at the University of New South Wales**. Beyond coding, I love designing and creating the systems, art, and music that comes together to create the full experience of each game!
+  I'm a **Sydney-based game developer** completing a 
+  **Bachelor of Computer Science at the University of New South Wales**. 
+  I design, create, and fine-tune the fundamental systems and mechanics 
+  that help make good games great.
 
 # affiliations:
 
@@ -23,6 +26,8 @@ links:
     url: https://github.com/charleskmorgandev/
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/charles-morgan-17bb5a442/
+  - icon: custom/itchio
+    url: https://charleskmorgandev.itch.io/
   # TBD: itch.io, leetcode
 
 # experience:
