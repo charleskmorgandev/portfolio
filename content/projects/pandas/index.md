@@ -1,15 +1,9 @@
 ---
-title: Pandas
-date: 2023-10-26
+title: example
+date: 2026-01-01
 links:
   - type: site
-    url: https://github.com/pandas-dev/pandas
+    url: https://charleskmorgandev.itch.io/
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - example tag
 ---
-
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
-
-<!--more-->
