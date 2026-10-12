@@ -26,9 +26,10 @@ links:
     url: https://github.com/charleskmorgandev/
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/charles-morgan-17bb5a442/
+  - icon: brands/leetcode
+    url: https://leetcode.com/u/charleskmorgandev/
 #  - icon: custom/itchio
 #    url: https://charleskmorgandev.itch.io/
-# TBD: leetcode
 
 # experience:
 
